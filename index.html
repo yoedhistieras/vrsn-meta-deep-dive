@@ -131,6 +131,16 @@
   footer{padding:36px 0 70px;color:var(--faint);font-size:13px}
   footer .disc{background:var(--card-2);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:16px;color:var(--muted);line-height:1.6}
   footer b{color:var(--ink)}
+
+  /* review board */
+  #board th{cursor:pointer;user-select:none;white-space:nowrap}
+  #board th:hover{color:var(--ink)}
+  #board td:first-child a{font-weight:800;color:var(--terra)}
+  .vd{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:999px;border:1px solid var(--line)}
+  .vd.sw{background:var(--lime-soft);border-color:#d6e8a8;color:#5d7a14}
+  .vd.ad{background:#e3f1ee;border-color:#bfe0d9;color:var(--teal)}
+  .vd.wa{background:var(--card-2);color:var(--faint)}
+  .rubric td b{color:var(--ink)}
 </style>
 </head>
 <body>
@@ -147,13 +157,13 @@
       <span class="pill"><b>As of:</b> 2026-06-23</span>
       <span class="pill"><b>Filter:</b> Video only</span>
     </div>
-    <p class="lede">Fifteen <strong>video</strong> ads from twelve brands that share [vrsn]'s buyer — 45+, foot pain, wide feet, "comfortable shoes still hurt." Each is scored on the four signals you asked for: <strong>run-time, reach, engagement and conversion likelihood</strong>. Every ad's actual video is embedded below, then the patterns are turned into <strong>10 ready-to-shoot [vrsn] scripts</strong>.</p>
+    <p class="lede">Fifteen <strong>video</strong> ads from twelve brands that share [vrsn]'s buyer — 45+, foot pain, wide feet, "comfortable shoes still hurt." Each is scored on the four signals you asked for: <strong>run-time, reach, engagement and conversion likelihood</strong>. Every ad's actual video is embedded below, then distilled into a <strong>review board</strong> &mdash; and turned into <strong>10 ready-to-shoot scripts</strong> in the <a href="brief.html">editor brief</a>.</p>
     <nav class="toc">
       <a href="#snapshot"><span class="n">00</span>Snapshot</a>
       <a href="#top15"><span class="n">01</span>Top 15 Video Ads</a>
       <a href="#angles"><span class="n">02</span>Winning Angles</a>
       <a href="#offers"><span class="n">03</span>Offers &amp; Funnel</a>
-      <a href="#scripts"><span class="n">04</span>10 Scripts</a>
+      <a href="#review"><span class="n">04</span>Review Board</a>
       <a href="#method"><span class="n">05</span>Method</a>
     </nav>
   </div>
@@ -536,83 +546,63 @@
   </div>
 </section>
 
-<!-- 04 SCRIPTS -->
-<section id="scripts">
+<!-- 04 REVIEW BOARD -->
+<section id="review">
   <div class="wrap">
-    <div class="sec-head"><span class="sec-num">04</span><h2>10 [vrsn] Scripts — Built From the Top Ads</h2></div>
-    <div class="sec-sub">Each clones a proven structure above and re-skins it for [vrsn]'s pain-relief + wide-toe + 100-day offer · ready to shoot</div>
-    <p class="muted" style="max-width:840px">Shoot <b>9:16 vertical, phone-grade UGC</b> unless noted. First 3 seconds = spoken hook + on-screen text. End every script on the <b>100-day risk-free + 40% off + free washbag</b> stack. <span class="ost">OST</span> = on-screen text.</p>
-    <div class="callout" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:space-between">
-      <div><h4 style="margin:0 0 4px">📋 Editor-ready production brief</h4><p style="margin:0" class="muted">Full timecoded shot sheets, global specs, brand kit, claims rules, asset checklist &amp; delivery specs — built to hand straight to a video editor.</p></div>
-      <a href="brief.html" style="background:var(--ink);color:#fff;padding:11px 20px;border-radius:999px;font-weight:700;white-space:nowrap">Open the brief →</a>
+    <div class="sec-head"><span class="sec-num">04</span><h2>Ad Review Board</h2></div>
+    <div class="sec-sub">Compare all 15 at a glance, sort by any signal, and score new creative against the same bar</div>
+    <p class="muted" style="max-width:860px"><b>Click any column header to sort.</b> Scores are 0&ndash;5; <b>Avg</b> blends the four. <b>Verdict</b> is the action to take:
+      <span class="vd sw">Swipe</span> clone the structure fast &middot;
+      <span class="vd ad">Adapt</span> strong &mdash; re-skin for [vrsn] &middot;
+      <span class="vd wa">Watch</span> useful idea, lower priority. Click a rank number to jump to that ad's video above.</p>
+
+    <div class="tbl-wrap">
+      <table id="board">
+        <thead><tr>
+          <th data-t="n">#</th><th data-t="s">Brand</th><th data-t="s">Angle</th>
+          <th data-t="n">Days&nbsp;live</th><th data-t="n">Run</th><th data-t="n">Reach</th>
+          <th data-t="n">Eng</th><th data-t="n">Conv</th><th data-t="n">Avg</th><th data-t="s">Verdict</th>
+        </tr></thead>
+        <tbody>
+          <tr><td><a href="#ad1">1</a></td><td><b>Barestep</b></td><td>Longevity King</td><td>665+</td><td>5</td><td>5</td><td>4</td><td>5</td><td><b>4.75</b></td><td><span class="vd sw">Swipe</span></td></tr>
+          <tr><td><a href="#ad2">2</a></td><td><b>Hike Footwear</b></td><td>VSL Advertorial</td><td>139</td><td>4</td><td>5</td><td>4</td><td>5</td><td><b>4.50</b></td><td><span class="vd sw">Swipe</span></td></tr>
+          <tr><td><a href="#ad3">3</a></td><td><b>ComfortOrtho</b></td><td>VSL Advertorial</td><td>127</td><td>4</td><td>4</td><td>3</td><td>5</td><td><b>4.00</b></td><td><span class="vd ad">Adapt</span></td></tr>
+          <tr><td><a href="#ad4">4</a></td><td><b>Flux Footwear</b></td><td>[vrsn] Twin Angle</td><td>71</td><td>4</td><td>5</td><td>4</td><td>4</td><td><b>4.25</b></td><td><span class="vd sw">Swipe</span></td></tr>
+          <tr><td><a href="#ad5">5</a></td><td><b>KURU</b></td><td>Category Leader</td><td>330</td><td>5</td><td>5</td><td>3</td><td>4</td><td><b>4.25</b></td><td><span class="vd sw">Swipe</span></td></tr>
+          <tr><td><a href="#ad6">6</a></td><td><b>KURU</b></td><td>Authority UGC</td><td>83</td><td>3</td><td>4</td><td>5</td><td>4</td><td><b>4.00</b></td><td><span class="vd ad">Adapt</span></td></tr>
+          <tr><td><a href="#ad7">7</a></td><td><b>FitVille</b></td><td>Wide-Fit</td><td>53</td><td>3</td><td>5</td><td>3</td><td>4</td><td><b>3.75</b></td><td><span class="vd wa">Watch</span></td></tr>
+          <tr><td><a href="#ad8">8</a></td><td><b>Vivobarefoot</b></td><td>UGC Story</td><td>49</td><td>3</td><td>5</td><td>5</td><td>3</td><td><b>4.00</b></td><td><span class="vd ad">Adapt</span></td></tr>
+          <tr><td><a href="#ad9">9</a></td><td><b>Orthofeet</b></td><td>Scale + Guarantee</td><td>76</td><td>4</td><td>5</td><td>3</td><td>5</td><td><b>4.25</b></td><td><span class="vd sw">Swipe</span></td></tr>
+          <tr><td><a href="#ad10">10</a></td><td><b>PureStep</b></td><td>Offer Hook</td><td>41</td><td>3</td><td>4</td><td>4</td><td>5</td><td><b>4.00</b></td><td><span class="vd ad">Adapt</span></td></tr>
+          <tr><td><a href="#ad11">11</a></td><td><b>Xero Shoes</b></td><td>Anti-Cushion</td><td>43</td><td>3</td><td>5</td><td>4</td><td>3</td><td><b>3.75</b></td><td><span class="vd wa">Watch</span></td></tr>
+          <tr><td><a href="#ad12">12</a></td><td><b>Kizik</b></td><td>Convenience</td><td>84</td><td>4</td><td>5</td><td>4</td><td>4</td><td><b>4.25</b></td><td><span class="vd sw">Swipe</span></td></tr>
+          <tr><td><a href="#ad13">13</a></td><td><b>FitVille</b></td><td>Wide-Fit · Bunions</td><td>45</td><td>3</td><td>4</td><td>3</td><td>4</td><td><b>3.50</b></td><td><span class="vd wa">Watch</span></td></tr>
+          <tr><td><a href="#ad14">14</a></td><td><b>Flux Footwear</b></td><td>Category Attack</td><td>71</td><td>4</td><td>5</td><td>4</td><td>4</td><td><b>4.25</b></td><td><span class="vd sw">Swipe</span></td></tr>
+          <tr><td><a href="#ad15">15</a></td><td><b>OOFOS</b></td><td>Over-50 UGC</td><td>83</td><td>3</td><td>3</td><td>5</td><td>3</td><td><b>3.50</b></td><td><span class="vd wa">Watch</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted" style="font-size:12.5px;margin-top:6px">Reach / Eng / Conv are a structured read of public signals (see Method); Run-time is the one hard number. &ldquo;Days&nbsp;live&rdquo; as of 2026-06-23. Default order = overall rank.</p>
+
+    <h3>How to review an ad &mdash; the 6-point bar</h3>
+    <p class="muted" style="max-width:860px">Score any ad on each line, <b>0&ndash;2</b>. Use it on the competitors above, or on your own next cut. <b>10&ndash;12 = ship &middot; 7&ndash;9 = fix one thing &middot; under 7 = rework.</b></p>
+    <div class="tbl-wrap">
+      <table class="rubric">
+        <thead><tr><th style="width:22%">Check</th><th style="width:58%">What a &ldquo;2&rdquo; looks like</th><th style="width:20%">Score</th></tr></thead>
+        <tbody>
+          <tr><td><b>1 &middot; Hook (0&ndash;3s)</b></td><td>Spoken hook + bold on-screen text + a visual pattern-interrupt all land before 0:03. You'd stop scrolling.</td><td class="muted">0 &nbsp; 1 &nbsp; 2</td></tr>
+          <tr><td><b>2 &middot; One clear idea</b></td><td>The ad proves a single message, not five. You can repeat it in one sentence.</td><td class="muted">0 &nbsp; 1 &nbsp; 2</td></tr>
+          <tr><td><b>3 &middot; Believable mechanism</b></td><td>It explains <em>why</em> it works (too soft/too hard, pain travels up, wide toe box) &mdash; not just &ldquo;comfortable.&rdquo;</td><td class="muted">0 &nbsp; 1 &nbsp; 2</td></tr>
+          <tr><td><b>4 &middot; Proof</b></td><td>Review count, podiatrist/expert, a real person, or a demo you can actually see.</td><td class="muted">0 &nbsp; 1 &nbsp; 2</td></tr>
+          <tr><td><b>5 &middot; Offer + risk-reversal</b></td><td>Clear price/discount, a guarantee (the 100-day), and a reason to act now.</td><td class="muted">0 &nbsp; 1 &nbsp; 2</td></tr>
+          <tr><td><b>6 &middot; Sound-off legibility</b></td><td>Works on mute: burned-in captions + a visual demo carry the whole message.</td><td class="muted">0 &nbsp; 1 &nbsp; 2</td></tr>
+        </tbody>
+      </table>
     </div>
 
-    <div class="script"><div class="sh"><span class="s-no">01</span><span class="s-ttl">The Goldilocks Demo</span><span class="s-src">model: [vrsn] hero × Flux "soft shoes weaken you"</span></div><div class="sb">
-      <div class="line"><div class="tcue">0–3s · Hook</div><div class="vo">"Your 'comfortable' shoes are exactly why your feet still hurt."<span class="ost">OST: Why comfy shoes HURT 👟</span><span class="dir">Hand squishes a thick foam sneaker flat — exaggerated, satisfying.</span></div></div>
-      <div class="line"><div class="tcue">3–10s · Problem</div><div class="vo">"Too soft, and your foot sinks in — it works overtime to stay balanced. Too hard, and every step slams your heels, knees and back."<span class="dir">Split screen: foot sinking into marshmallow vs foot on concrete.</span></div></div>
-      <div class="line"><div class="tcue">10–18s · Mechanism</div><div class="vo">"[vrsn] is built right in the middle. Enough cushion to protect you. Firm enough to keep your foot strong. A wide toe box so your toes finally spread out."<span class="ost">OST: Not too soft. Not too hard.</span><span class="dir">Bend/flex the [vrsn] shoe; top-down wide-toe-box shot, toes spreading.</span></div></div>
-      <div class="line"><div class="tcue">18–28s · Proof + Offer</div><div class="vo">"Podiatrist-recommended, and you try them risk-free for 100 days. If your feet don't thank you, send them back."<span class="ost">OST: 40% OFF + Free washbag · 100-day risk-free</span><span class="dir">Walk-away shot, smiling. CTA card: Shop Now.</span></div></div>
-    </div></div>
-
-    <div class="script"><div class="sh"><span class="s-no">02</span><span class="s-ttl">The Podiatrist 5-Feature Checklist</span><span class="s-src">model: KURU "Best Shoes for Plantar Fasciitis" expert UGC</span></div><div class="sb">
-      <div class="line"><div class="tcue">0–4s · Hook</div><div class="vo">"If you've got plantar fasciitis, stop wearing shoes that fold in half. Here are the 5 things I tell every patient to look for."<span class="ost">OST: 5 things to look for ✅</span><span class="dir">Expert/creator to camera, holds a shoe, folds it in half.</span></div></div>
-      <div class="line"><div class="tcue">4–40s · The list</div><div class="vo">"One — a firm heel that doesn't collapse. Two — a deep heel cup that spreads pressure. Three — a wide toe box so your toes aren't crushed. Four — a sole that flexes but doesn't fold. Five — natural movement so your foot gets stronger, not weaker. [vrsn] checks all five."<span class="dir">Cut to each feature on the [vrsn] shoe as it's named; on-screen 1️⃣–5️⃣.</span></div></div>
-      <div class="line"><div class="tcue">40–55s · Close</div><div class="vo">"The wrong shoe slows recovery down. The right one you can feel on day one — and they give you 100 days to test that."<span class="ost">OST: 100-day risk-free · 40% off</span><span class="dir">#ad disclosure; CTA card.</span></div></div>
-    </div></div>
-
-    <div class="script"><div class="sh"><span class="s-no">03</span><span class="s-ttl">Pain Traced Back To My Feet</span><span class="s-src">model: Vivobarefoot story × OOFOS "whole body"</span></div><div class="sb">
-      <div class="line"><div class="tcue">0–3s · Hook</div><div class="vo">"My knees and lower back were killing me. Turns out the problem was my feet."<span class="ost">OST: It wasn't my knees… 👀</span><span class="dir">Real-person UGC, sitting, rubbing knee.</span></div></div>
-      <div class="line"><div class="tcue">3–14s · Story</div><div class="vo">"Every step starts at your feet. If that impact isn't handled, it travels up — into your heels, knees, hips, back. I blamed getting older. It was my shoes."<span class="dir">Simple arrow animation up the body, or hand tracing foot→back.</span></div></div>
-      <div class="line"><div class="tcue">14–24s · Switch</div><div class="vo">"I switched to [vrsn]. Wide toe box, the right amount of cushion, a sole that lets my foot actually work. Two weeks in, the pain that 'came with age' just… faded."<span class="dir">Lacing up [vrsn]; walking comfortably outdoors.</span></div></div>
-      <div class="line"><div class="tcue">24–32s · Offer</div><div class="vo">"If pain has started to feel normal — it doesn't have to be. They give you 100 days to find out."<span class="ost">OST: 100-day risk-free · 40% off + free washbag</span></div></div>
-    </div></div>
-
-    <div class="script"><div class="sh"><span class="s-no">04</span><span class="s-ttl">The Nurse On Her Feet All Day</span><span class="s-src">model: Barestep 665-day testimonial winner</span></div><div class="sb">
-      <div class="line"><div class="tcue">0–4s · Hook</div><div class="vo">"I'm a nurse. I'm on my feet 12 hours a day. These are the only shoes that stopped the pain the minute I put them on."<span class="ost">OST: Relief from the first step</span><span class="dir">Scrubs, clinic b-roll, holding [vrsn].</span></div></div>
-      <div class="line"><div class="tcue">4–18s · Benefit stack</div><div class="vo">"No more pins and needles by hour six. No more swollen, throbbing feet at the end of a shift. My heels stopped aching. I've recommended them to half my floor."<span class="dir">On-screen ✅ checklist as each benefit lands.</span></div></div>
-      <div class="line"><div class="tcue">18–28s · Close</div><div class="vo">"If you're on your feet all day, run — don't walk — to try a pair. 100 days risk-free, free delivery."<span class="ost">OST: 40% OFF · 100-day risk-free · Free shipping</span></div></div>
-    </div></div>
-
-    <div class="script"><div class="sh"><span class="s-no">05</span><span class="s-ttl">After 50, Your Shoes Decide Your Day</span><span class="s-src">model: OOFOS over-50 creator UGC</span></div><div class="sb">
-      <div class="line"><div class="tcue">0–3s · Hook</div><div class="vo">"One thing I learned after 50: the shoes you wear decide how your whole body feels by 6pm."<span class="ost">OST: After 50… shoes matter</span><span class="dir">Warm, relatable 50–65 creator, kitchen/garden setting.</span></div></div>
-      <div class="line"><div class="tcue">3–16s · Turn</div><div class="vo">"I thought aching feet, stiff hips and a sore back were just 'getting older.' Then I changed my shoes. [vrsn] has a wide toe box, the right cushioning, and they slip right on — no bending over."<span class="dir">Slip-on demo, no hands; walking comfortably.</span></div></div>
-      <div class="line"><div class="tcue">16–26s · Close</div><div class="vo">"When your feet feel supported, everything above them does too. Try them for 100 days — your feet will thank you."<span class="ost">OST: 100-day risk-free · 40% off + free washbag</span></div></div>
-    </div></div>
-
-    <div class="script"><div class="sh"><span class="s-no">06</span><span class="s-ttl">Wide Feet? Bunions? Swelling?</span><span class="s-src">model: FitVille "Say Goodbye to Foot Pain"</span></div><div class="sb">
-      <div class="line"><div class="tcue">0–4s · Hook</div><div class="vo">"If your toes are crammed, your bunions ache, or your feet swell by afternoon — your shoes are too narrow. Full stop."<span class="ost">OST: Wide feet? This is for you 🦶</span><span class="dir">Top-down: cramped toes in a normal shoe vs toes spreading in [vrsn].</span></div></div>
-      <div class="line"><div class="tcue">4–16s · Feature-benefit</div><div class="vo">"[vrsn]'s wide toe box gives your toes real room — no pressure on bunions. The cushioning cradles your heel and spreads the load, so swelling and heel pain ease off. And they slip on without a fight."<span class="dir">On-screen ✅: Wide toe box · Heel relief · Easy slip-on.</span></div></div>
-      <div class="line"><div class="tcue">16–26s · Close</div><div class="vo">"Comfort built for the shape of real feet. 100 days to feel the difference, or your money back."<span class="ost">OST: 40% OFF · 100-day risk-free</span></div></div>
-    </div></div>
-
-    <div class="script"><div class="sh"><span class="s-no">07</span><span class="s-ttl">Walk Pain-Free Or Money Back (VSL open)</span><span class="s-src">model: ComfortOrtho / Orthofeet money-back VSL</span></div><div class="sb">
-      <div class="line"><div class="tcue">0–5s · Hook</div><div class="vo">"How thousands of Americans over 50 are ending daily foot pain — no orthotics, no painkillers, no surgery."<span class="ost">OST: No orthotics. No surgery.</span><span class="dir">Calm narrator VO over people walking pain-free. Editorial tone.</span></div></div>
-      <div class="line"><div class="tcue">5–35s · Mechanism</div><div class="vo">"Most 'comfort' shoes do one of two things wrong: too soft and your foot collapses, or too stiff and every step jars your joints. [vrsn] was engineered in the middle — protective cushioning, a foot-shaped wide toe box, and a sole that keeps your foot strong instead of lazy."<span class="dir">Cutaway diagrams; the 3-way Goldilocks visual.</span></div></div>
-      <div class="line"><div class="tcue">35–55s · Proof</div><div class="vo">"Podiatrist-recommended. Loved by people with plantar fasciitis, bunions, neuropathy and everyday aches. Relief most feel on the very first walk."<span class="dir">Star ratings + short customer soundbites.</span></div></div>
-      <div class="line"><div class="tcue">55–70s · Risk reversal</div><div class="vo">"Here's the deal: wear them for 100 days. If your feet don't feel dramatically better, send them back for a full refund. Right now you save 40% and get a free travel washbag."<span class="ost">OST: Walk pain-free or your money back · 100 days</span><span class="dir">CTA → advertorial / offer page.</span></div></div>
-    </div></div>
-
-    <div class="script"><div class="sh"><span class="s-no">08</span><span class="s-ttl">The Founder Overstock Confession</span><span class="s-src">model: PureStep "Our mistake, your win"</span></div><div class="sb">
-      <div class="line"><div class="tcue">0–4s · Hook</div><div class="vo">"I'm the founder of [vrsn], and I have to be honest — we messed up our inventory."<span class="ost">OST: We over-ordered 😅</span><span class="dir">Founder to camera, warehouse behind, boxes of shoes.</span></div></div>
-      <div class="line"><div class="tcue">4–16s · Reason why</div><div class="vo">"We made way too many pairs of our pain-relief sneaker. Rather than sit on them, we're releasing the extra stock at 40% off — with a free washbag — while sizes last."<span class="dir">Pan across stacked boxes; hold up the shoe + washbag.</span></div></div>
-      <div class="line"><div class="tcue">16–28s · Product + close</div><div class="vo">"Wide toe box, balanced cushioning, podiatrist-recommended — the same shoe thousands wear daily. Try it 100 days risk-free. Once your size sells out, it's gone."<span class="ost">OST: 40% off + free washbag · 100-day risk-free</span><span class="dir">Urgency card: "Check if your size is still in stock."</span></div></div>
-    </div></div>
-
-    <div class="script"><div class="sh"><span class="s-no">09</span><span class="s-ttl">No Bending, No Struggling</span><span class="s-src">model: Kizik "last sneaker you'll tie" × Orthofeet hands-free</span></div><div class="sb">
-      <div class="line"><div class="tcue">0–3s · Hook</div><div class="vo">"If bending down to put your shoes on has become a whole event — watch this."<span class="ost">OST: No bending required</span><span class="dir">Close-up: foot slides into [vrsn] hands-free, heel stays firm. Oddly satisfying.</span></div></div>
-      <div class="line"><div class="tcue">3–14s · Benefit</div><div class="vo">"No bending, no fighting with laces, no crushed heels. Just step in and go. And once it's on, it's a genuine pain-relief shoe — wide toe box, cushioned where it counts."<span class="dir">Three quick step-in reps; then a comfortable walk.</span></div></div>
-      <div class="line"><div class="tcue">14–24s · Close</div><div class="vo">"Easy on. Easy on your feet, your knees and your back. 100 days to try them risk-free."<span class="ost">OST: 40% OFF · 100-day risk-free</span></div></div>
-    </div></div>
-
-    <div class="script"><div class="sh"><span class="s-no">10</span><span class="s-ttl">Don't Buy Another "Comfort" Shoe Until You See This</span><span class="s-src">model: Xero anti-cushion × Flux "ditch the swoosh"</span></div><div class="sb">
-      <div class="line"><div class="tcue">0–4s · Hook</div><div class="vo">"Before you spend $150 on another big-brand 'comfort' sneaker — watch this comparison."<span class="ost">OST: Don't buy comfort shoes until you see this</span><span class="dir">Two shoes side by side: a chunky cushioned trainer vs [vrsn].</span></div></div>
-      <div class="line"><div class="tcue">4–18s · Comparison</div><div class="vo">"Big brands pile on soft foam that feels great in the store — and slowly weakens your feet, so the pain keeps coming back. [vrsn] does the opposite: balanced cushioning, a wide toe box, and natural movement that makes your feet stronger over time."<span class="dir">Press-test both soles; fold both; show toe-box width difference.</span></div></div>
-      <div class="line"><div class="tcue">18–30s · Close</div><div class="vo">"Same money, completely different result — relief that lasts instead of pain that returns. Podiatrist-recommended, 100 days risk-free, 40% off today."<span class="ost">OST: 40% off + free washbag · 100-day risk-free</span><span class="dir">CTA card: Shop Now.</span></div></div>
-    </div></div>
-
-    <div class="callout terra">
-      <h4>How to run these</h4>
-      <p style="margin:0">Test the <b>4 prospecting workhorses first</b> — Script 01 (Goldilocks demo), 02 (podiatrist checklist), 03 (pain-travels-up story), 07 (money-back VSL). These map to the longest-running, highest-conviction competitor formats. Use 04/05/08 as UGC/creator variants, and 06/09/10 as condition- and convenience-specific spin-offs. Then do what every winner does: <b>spin 5–10 hook/thumbnail variants of whichever 2 win</b>, routed through a lengthened <span class="chip">/pages/goldilocks</span> advertorial.</p>
+    <div class="callout" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:space-between">
+      <div><h4 style="margin:0 0 4px">The 10 scripts moved to their own brief</h4><p style="margin:0" class="muted">Built from the highest-scoring ads above &mdash; now a full editor brief with timecoded shot sheets, specs, brand kit, claims rules &amp; delivery specs.</p></div>
+      <a href="brief.html" style="background:var(--ink);color:#fff;padding:11px 20px;border-radius:999px;font-weight:700;white-space:nowrap">Open the editor brief &rarr;</a>
     </div>
   </div>
 </section>
@@ -647,5 +637,27 @@
   </div>
 </footer>
 
+
+<script>
+  document.querySelectorAll('#top15 .ad').forEach(function(a,i){a.id='ad'+(i+1);});
+  (function(){
+    var tb=document.getElementById('board'); if(!tb) return;
+    var tbody=tb.tBodies[0];
+    Array.prototype.forEach.call(tb.querySelectorAll('th'),function(th,idx){
+      var asc=true;
+      th.addEventListener('click',function(){
+        var num=th.getAttribute('data-t')==='n';
+        var rows=Array.prototype.slice.call(tbody.rows);
+        rows.sort(function(r1,r2){
+          var a=r1.cells[idx].innerText.trim(), b=r2.cells[idx].innerText.trim();
+          if(num){a=parseFloat(a.replace('+',''))||0;b=parseFloat(b.replace('+',''))||0;return asc?a-b:b-a;}
+          return asc?a.localeCompare(b):b.localeCompare(a);
+        });
+        asc=!asc;
+        rows.forEach(function(r){tbody.appendChild(r);});
+      });
+    });
+  })();
+</script>
 </body>
 </html>
